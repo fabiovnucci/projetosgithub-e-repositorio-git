@@ -8,85 +8,64 @@
       height: 600px;
       object-fit: cover;
     }
-    nav {
-      margin-top: 30px;
-      margin-bottom: 20px;
-    }
-       @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
-        h2 {
-            font-family: "Roboto", serif;
-        }
- 
+  nav {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    }
+  
   </style>
+  
 
 
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Academia Fitness Nucci</title>
+  <title>Academia Fitness</title>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
 
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 
 <body>
-
-  <nav class="navbar navbar-expand-lg navbar-light bg-dark-subtle container p-0">
-    <div class="container-fluid"> 
-   
-          <img src="../site 5 bootstrap/assets/logo.png" alt="" width="45" height="35"  class="d-inline-block align-text-top">
-           <h2>Academia Fitness Nucci</h2>
-          <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto">
+  <nav class="navbar navbar-expand-lg navbar-dark container " style= "background-color: black; ">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Academia Fitness</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Alternar navegação">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link" href="#">Home</a>
+            <a class="nav-link active" href="#">Home</a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link active" href="#">Sobre</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Sobre</a>
+            <a class="nav-link active" href="#">Serviços</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Serviços</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Contato</a>
+            <a class="nav-link active" href="#">Contato</a>
           </li>
         </ul>
       </div>
     </div>
   </nav>
-
-  <div id="carouselExample" class="carousel slide container p-0" data-bs-ride="carousel">
-    <div class="carousel-inner">
-
-      <div class="carousel-item active">
-        <img src="../site 5 bootstrap/assets/1.jpg" class="d-block w-100" alt="Imagem 1">
-      </div>
-
-      <div class="carousel-item">
-        <img src="../site 5 bootstrap/assets/2.jpg" class="d-block w-100" alt="Imagem 2">
-      </div>
-
-      <div class="carousel-item">
-        <img src="../site 5 bootstrap/assets/3.jpg" class="d-block w-100" alt="Imagem 3">
-      </div>
-    </div>
-
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Anterior</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Próximo</span>
-    </button>
+  <div class=" p-0 container">
+    <img src="../site 5 bootstrap/assets/fundoacademia.jpg" class="img-fluid mb-4" alt="Imagem 3" style="width: 100%">
   </div>
 
-  <section id="services" class="container p-0, py-5">
-    <h2 class="text-center mb-4"><strong>Nossos Serviços</strong></h2>
-    <div class="row text-center">
-      <hr>
+  <section id="services" class="container text-center p-0 py-5">
+    <div class="shadow-lg p-3 mb-50 bg-body rounded" >
+      <h1 class="text-center display-1 mb-5"><strong>Nossos Serviços</strong></h1>
+    </div>
+    <div class="row text-center " style="margin-top: 170px; margin-bottom: 70px;">
       <div class="col-md-4">
         <div class="service-item">
           <i class="services-icons bi bi-dumbbell"></i>
+
+          <img src="../site 5 bootstrap/assets/treino.png"  style="width: 40px;" class="mb-4">
           <h4>Aulas de Musculação</h4>
           <p>Treinamentos especializados para aumentar sua força e resistência.</p>
         </div>
@@ -94,6 +73,7 @@
       <div class="col-md-4">
         <div class="service-item">
           <i class="services-icons bi bi-person-circle"></i>
+          <img src="../site 5 bootstrap/assets/personal-trainer.png" style="width: 40px;" class="mb-4">
           <h4>Acompanhamento Personalizado</h4>
           <p>Personal trainers experientes para ajudá-lo a alcançar seus objetivos.</p>
         </div>
@@ -101,42 +81,57 @@
       <div class="col-md-4">
         <div class="service-item">
           <i class="services-icons bi bi-heart-pulse"></i>
+          <img src="../site 5 bootstrap/assets/esteira.png" style="width: 40px;" class="mb-4">
           <h4>Aulas de Cardio</h4>
           <p>Melhore sua saúde cardiovascular com aulas energéticas e divertidas.</p>
         </div>
       </div>
     </div>
   </section>
-  <hr>
-  <section class="py-5 bg-light">
-    <div class="container">
-      <h2 class="text-center mb-4">Galeria</h2>
-      <div class="row">
-        <div class="col-md-4">
-          <img
-            src="https://img.freepik.com/fotos-gratis/partes-do-haltere-em-cinza_23-2147750760.jpg?t=st=1741624904~exp=1741628504~hmac=f40836a5b76a397a8891358f7425433eb8d89e8b14594d70c3b2b6d9f4b9b12e&w=1060"
-            class="img-fluid mb-4" alt="Imagem 1">
+  
+  
+  
+  
+  <section class="py-5 text-bg-black container">
+
+    <h2 class="text-center mb-4"><strong>Galeria de Inspiração</strong></h2>
+    <div class="row">
+
+      <div id="carouselExample" class="carousel slide container p-0" data-bs-ride="carousel">
+        <div class="carousel-inner">
+
+          <div class="carousel-item active">
+            <img src="../site 5 bootstrap/assets/1.jpg" class="d-block w-100" alt="Imagem 1">
+          </div>
+
+          <div class="carousel-item">
+            <img src="../site 5 bootstrap/assets/2.jpg" class="d-block w-100" alt="Imagem 2">
+          </div>
+
+          <div class="carousel-item">
+            <img src="../site 5 bootstrap/assets/3.jpg" class="d-block w-100" alt="Imagem 3">
+          </div>
         </div>
-        <div class="col-md-4">
-          <img
-            src="https://img.freepik.com/fotos-gratis/partes-do-haltere-em-cinza_23-2147750760.jpg?t=st=1741624904~exp=1741628504~hmac=f40836a5b76a397a8891358f7425433eb8d89e8b14594d70c3b2b6d9f4b9b12e&w=1060"
-            class="img-fluid mb-4" alt="Imagem 2">
-        </div>
-        <div class="col-md-4">
-          <img
-            src="https://img.freepik.com/fotos-gratis/partes-do-haltere-em-cinza_23-2147750760.jpg?t=st=1741624904~exp=1741628504~hmac=f40836a5b76a397a8891358f7425433eb8d89e8b14594d70c3b2b6d9f4b9b12e&w=1060"
-            class="img-fluid mb-4" alt="Imagem 3">
-        </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Próximo</span>
+        </button>
+
       </div>
     </div>
   </section>
 
-  <footer class=" container bg-dark text-bg-success text-center py-4">
-    <p>&copy; 2025 Academia Fitness Nucci. Todos os direitos reservados.</p>
+  <footer class=" container p-0  text-center py-4">
+    <div class="p-6 mb-2 bg-black text-white">
+      <p>&copy; 2025 Academia Fitness. Todos os direitos reservados.</p>
   </footer>
-
+  </div>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
 </body>
-
 </html>
