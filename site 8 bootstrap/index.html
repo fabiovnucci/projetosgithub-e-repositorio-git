@@ -4,126 +4,78 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@200..900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
-
-
-  <title>Site 8 - Criando sites com Bootstrap 5</title>
-
+  <title>Academia Raiz</title>
 </head>
 
-<body style="background: #111111 ">
-
-  <div class="bg-image  d-flex justify-content-center align-items-center vh-100">
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top ">
-      <div class="container-fluid justify-content-center" style="background: color(#111111 )">
-        <ul class="nav">
-
-          <a class="nav-link brand " aria-current="page" href="#" style="color: #ffffff;"><strong>Academia Raiz</strong>
-            &reg;</strong></a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-
-
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto">
-              <li class="nav-item">
-                <a class="nav-link" href="#" style="color: 	#FFFF00;"><strong>Horário de Treinos</strong></a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#" style="color: 	#FFFF00;"><strong>Treinos</strong></a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#" style="color: 	#FFFF00;"><strong>Programas</strong></a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#" style="color: 	#FFFF00;"><strong>Contatos</strong></a>
-              </li>
-            </ul>
-          </div>
-    </nav>
-  </div>
-
-  <section id="services" class="container text-center p-0 py-5 ">
-    <div class=" p-5 mt-5 rounded ">
-      <h1 style="color: #ffff00 ;" class="text-center display-5 "> <strong>Nossos Serviços</strong></h1>
-    </div>
-
-    <div class="row text-center" style="margin-top: 70px; margin-bottom: 100px;">
-      <div class="col-md-4">
-        <div class="service-item">
-
-
-
-          <img src="../site 8 bootstrap/assets/img/halterofilista.png" style="width: 60px; " class="mb-4">
-          <h4 style="color:#ffff00 ;">Aulas de Musculação</h4>
-          <p style="color: #ffffff ;">Treinamentos especializados para aumentar sua força e resistência.</p>
-        </div>
+<body style="background: #111111;">
+    <div class="bg-image">    
       </div>
-
-      <div class="col-md-4">
-        <div class="service-item">
-
-          <img src="../site 8 bootstrap/assets/img/personal.png" style="width: 60px;" class="mb-4">
-          <h4 style="color: #ffff00 ;">Acompanhamento Personalizado</h4>
-          <p style="color: #ffffff;">Personal trainers experientes para ajudá-lo a alcançar seus objetivos.</p>
-        </div>
-      </div>
-
-      <div class="col-md-4">
-        <div class="service-item">
-
-          <img src="../site 8 bootstrap/assets/img/aula-de-spinning.png" style="width: 60px; " class="mb-4">
-          <h4 style="color: #ffff00;">Aulas de Cardio</h4>
-          <p style="color: #ffffff;">Melhore sua saúde cardiovascular com aulas energéticas e divertidas.</p>
-        </div>
+      
+  
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#"><strong>Academia Raiz</strong> &reg;</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link text-warning" href="#">Horário de Treinos</a></li>
+          <li class="nav-item"><a class="nav-link text-warning" href="#">Treinos</a></li>
+          <li class="nav-item"><a class="nav-link text-warning" href="#">Programas</a></li>
+          <li class="nav-item"><a class="nav-link text-warning" href="#">Contatos</a></li>
+        </ul>
       </div>
     </div>
+  </nav>
 
+  <section id="services" class="container text-center py-5 mt-5">
+    <h1 class="text-warning display-5"><strong>Nossos Serviços</strong></h1>
+    <div class="row text-center mt-5">
+      <div class="col-md-4">
+        <img src="../site 8 bootstrap/assets/img/halterofilista.png" style="width: 60px;" class="mb-3">
+        <h4 class="text-warning">Aulas de Musculação</h4>
+        <p class="text-white">Treinamentos especializados para aumentar sua força e resistência.</p>
+      </div>
+      <div class="col-md-4">
+        <img src="../site 8 bootstrap/assets/img/personal.png" style="width: 60px;" class="mb-3">
+        <h4 class="text-warning">Acompanhamento Personalizado</h4>
+        <p class="text-white">Personal trainers experientes para ajudá-lo a alcançar seus objetivos.</p>
+      </div>
+      <div class="col-md-4">
+        <img src="../site 8 bootstrap/assets/img/aula-de-spinning.png" style="width: 60px;" class="mb-3">
+        <h4 class="text-warning">Aulas de Cardio</h4>
+        <p class="text-white">Melhore sua saúde cardiovascular com aulas energéticas e divertidas.</p>
+      </div>
+    </div>
   </section>
 
-
-  <div class="container-fluid text-center mt-5 mb-5  ">
-    <h1 class="mb-5 mt-5 p-3">Redes Sociais</h1>
-    <a href="https://www.facebook.com/seuperfil" target="_blank" style="text-decoration: none;">
-      <i class="bi bi-facebook fs-1 mx-3 " style="color: #316FF6;"></i>
-    </a>
-    <a href="https://wa.me/seunumerodetelefone" target="_blank" style="text-decoration: none;">
-      <i class="bi bi-whatsapp fs-1 mx-3" style="color: #25D366; "></i>
-    </a>
-    <a href="https://www.instagram.com/seuusuario" target="_blank" style="text-decoration: none;">
-      <i class="bi bi-instagram fs-1 mx-3" style="color: #F56040; "></i>
-    </a>
-    <a href="https://twitter.com/seuusuario" target="_blank" style="text-decoration: none;">
-      <i class="bi bi-twitter-x fs-1 mx-3" style="color: #00acee ; "></i>
-    </a>
+  <div class="container text-center mb-5 mt-5">
+    <h1 class="text-white mb-4">Redes Sociais</h1>
+    <a href="https://www.facebook.com/seuperfil" target="_blank" class="mx-3 text-primary"><i class="bi bi-facebook fs-1"></i></a>
+    <a href="https://wa.me/seunumerodetelefone" target="_blank" class="mx-3 text-success"><i class="bi bi-whatsapp fs-1"></i></a>
+    <a href="https://www.instagram.com/seuusuario" target="_blank" class="mx-3 text-danger"><i class="bi bi-instagram fs-1"></i></a>
+    <a href="https://twitter.com/seuusuario" target="_blank" class="mx-3 text-info"><i class="bi bi-twitter-x fs-1"></i></a>
   </div>
 
 
 
-  <footer class="container-fluid text-center p-3" style="background-color: black;">
+  <footer class="container-fluid text-center p-4" style="background-color: black;">
     <div class="d-flex justify-content-center align-items-center">
-      <p class="mb-0 text-white me-2"><strong>2025 Todos os direitos reservados.&reg;</strong></p>
-      <a href="https://github.com/fabiovnucci" target="_blank">
-        <img src="../site 7 bootstrap/assets/euoficial.PNG" style="width: 40px; height: 40px;"
-          class="img-fluid rounded-circle">
-      </a>
+        <p class="mb-0 text-white me-2"><strong>2025 Todos os direitos reservados.&reg;</strong></p>
+        <a href="https://github.com/fabiovnucci" target="_blank">
+            <img src="../site 7 bootstrap/assets/euoficial.PNG" style="width: 40px; height: 40px;"
+                class="img-fluid rounded-circle">
+        </a>
     </div>
-  </footer>
+</footer>
 
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-    crossorigin="anonymous"></script>
-
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>

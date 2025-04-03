@@ -1,16 +1,18 @@
 a,
-    p,
+    p, li,
     section, h1 {
       font-family: "Unbounded", sans-serif;
       font-optical-sizing: auto;
     }
 
+   
+
+
     .bg-image {
-      
       background: url('assets/img/funtoacademia.jpg');
       background-size: cover;
-      width: 100%;
-    }
-    h1 {
-      color: #FFFF00;
+      height: 100vh; 
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
