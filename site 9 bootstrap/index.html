@@ -4,33 +4,59 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description"
+    content="Modelos de sites prontos com Bootstrap 5 para venda. Layout moderno e responsivo." />
   <title>Site 9 - Criando sites com Bootstrap 5</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
   <style>
-    @import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Pinyon+Script&family=STIX+Two+Text:ital,wght@0,400..700;1,400..700&family=Special+Gothic+Condensed+One&display=swap');
-
     body {
-      font-family: "STIX Two Text", serif;
-      font-style: italic;
+      font-family: 'Inter', sans-serif;
+      background: linear-gradient(to bottom, #434343, #000000);
     }
 
     .spacer-navbar {
       padding-top: 110px;
     }
+
+    .navbar {
+      backdrop-filter: blur(8px);
+    }
+
+    .card {
+      border: none;
+      border-radius: 1rem;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    }
+
+    .section-divider {
+      border-top: 2px solid #ccc;
+      margin: 4rem 0;
+    }
+
+    .text-shadow {
+      text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+    }
+
+    .btn-warning {
+      font-weight: 600;
+    }
   </style>
 </head>
 
+<body>
 
-<body class="bg-black">
 
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light shadow fixed-top bg-opacity-75">
     <div class="container">
       <a class="navbar-brand" href="#">
-        <h2>Meu Site</h2>
+        <h2 class="text-shadow">Meu Site</h2>
       </a>
       <i class="bi bi-rocket-takeoff fs-3"></i>
+
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -52,7 +78,6 @@
       </div>
     </div>
   </nav>
-
   <section class="container my-5">
     <div class="row align-items-center justify-content-center text-white text-center text-md-start">
 
@@ -78,7 +103,7 @@
     <div class="row align-items-center" id="textos">
       <h5 class="display-4 p-5 text-center">Textos</h5>
 
-      <div class="col-2">
+      <div class="col-4">
         <h1>Texto A</h1>
         <p> Descrição-Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, accusamus nemo, ea, explicabo
           temporibus
@@ -87,33 +112,33 @@
         </p>
       </div>
 
-      <div class="col-2">
+      <div class="col-4">
         <h2>Texto B</h2>
         <p>Descrição-Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, nam doloribus magnam sit fugiat
           provident odit voluptatibus cumque, sunt vel quaerat velit sapiente necessitatibus repellendus
           accusantium ducimus ipsum rerum assumenda!</p>
       </div>
-      <div class="col-2">
+      <div class="col-4">
         <h3>Texto C</h3>
         <p>Descrição-Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias laudantium dolorem et. Eaque
           consequatur iusto magnam voluptatibus beatae fugiat, quas aspernatur adipisci explicabo porro
           numquam?</p>
       </div>
 
-      <div class="col-2">
+      <div class="col-4">
         <h4>Texto D</h4>
         <p>Descrição-Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias laudantium dolorem et. Eaque
           consequatur iusto magnam voluptatibus beatae fugiat, quas aspernatur adipisci explicabo porro
           numquam?</p>
       </div>
 
-      <div class="col-2">
+      <div class="col-4">
         <h5>Texto E</h5>
         <p>Descrição-Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias laudantium dolorem et. Eaque
           consequatur iusto magnam voluptatibus beatae fugiat, quas aspernatur adipisci explicabo porro
           numquam?</p>
       </div>
-      <div class="col-2">
+      <div class="col-4">
         <h6>Texto F</h6>
         <p>Descrição-Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias laudantium dolorem et. Eaque
           consequatur iusto magnam voluptatibus beatae fugiat, quas aspernatur adipisci explicabo porro
@@ -201,11 +226,11 @@
 
 
 
-  <footer class="bg-secondary  text-center  py-3 ">
+  <footer class=" text-center  py-3 " style="background-color:#363636;">
     <div class="d-flex justify-content-center align-items-center">
       <p class="mb-0 text-white me-2"><strong>2025 Todos os direitos reservados.&reg;</strong></p>
       <a href="https://github.com/fabiovnucci" target="_blank">
-        <img src="../site 7 bootstrap/assets/euoficial.PNG" style="width: 40px; height: 40px;"
+        <img src="../site 7 bootstrap/assets/euoficial.PNG" style="width: 40px; height: 40px ; "
           class="img-fluid rounded-circle">
       </a>
     </div>
