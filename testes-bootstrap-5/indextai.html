@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Site Exemplo com Tailwind</title>
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100 text-gray-800">
+<!-- NAVBAR -->
+<header class="bg-white shadow">
+    <div class="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
+      
+      <!-- LOGO -->
+      <div class="text-xl font-bold text-blue-600">MinhaMarca</div>
+      
+      <!-- MENU DESKTOP -->
+      <nav class="hidden md:flex space-x-6">
+        <a href="#servicos" class="text-gray-700 hover:text-blue-600 font-medium">Serviços</a>
+        <a href="#galeria" class="text-gray-700 hover:text-blue-600 font-medium">Projetos</a>
+        <a href="#contato" class="text-gray-700 hover:text-blue-600 font-medium">Contato</a>
+      </nav>
+  
+      <!-- BOTÃO MOBILE -->
+      <div class="md:hidden">
+        <button id="btnMenu" class="text-gray-600 focus:outline-none">
+          <!-- ícone de hambúrguer -->
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2"
+               viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M4 6h16M4 12h16M4 18h16"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+  
+    <!-- MENU MOBILE (escondido por padrão, você pode ativar com JS depois) -->
+    <nav id="menuMobile" class="md:hidden hidden px-4 pb-4 space-y-2">
+      <a href="#servicos" class="block text-gray-700 hover:text-blue-600">Serviços</a>
+      <a href="#galeria" class="block text-gray-700 hover:text-blue-600">Projetos</a>
+      <a href="#contato" class="block text-gray-700 hover:text-blue-600">Contato</a>
+    </nav>
+  </header>
+  
+    <!-- HERO SECTION -->
+    <section class="flex items-center justify-center h-screen bg-blue-600 text-white text-center px-4">
+        <div>
+            <h1 class="text-4xl md:text-6xl font-bold mb-4">Transforme suas ideias em realidade</h1>
+            <p class="text-lg md:text-xl mb-6">Sites modernos, automações inteligentes e muito mais</p>
+            <a href="#servicos"
+                class="bg-white text-blue-600 font-semibold py-2 px-6 rounded hover:bg-gray-200 transition">Ver
+                serviços</a>
+        </div>
+    </section>
+
+    <!-- SEÇÃO DE SERVIÇOS -->
+    <section id="servicos" class="py-16 bg-white">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">Nossos Serviços</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+
+                <!-- Card 1 -->
+                <div class="bg-gray-50 p-6 rounded-xl shadow hover:shadow-lg transition">
+                    <h3 class="text-xl font-semibold mb-2">Desenvolvimento Web</h3>
+                    <p class="text-gray-600 mb-4">Sites responsivos, rápidos e personalizados com HTML, CSS e Tailwind.
+                    </p>
+                    <a href="#" class="text-blue-600 font-medium hover:underline">Saiba mais →</a>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="bg-gray-50 p-6 rounded-xl shadow hover:shadow-lg transition">
+                    <h3 class="text-xl font-semibold mb-2">Automação Residencial</h3>
+                    <p class="text-gray-600 mb-4">Soluções com Arduino para controle de luzes, sensores e mais.</p>
+                    <a href="#" class="text-blue-600 font-medium hover:underline">Saiba mais →</a>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="bg-gray-50 p-6 rounded-xl shadow hover:shadow-lg transition">
+                    <h3 class="text-xl font-semibold mb-2">Design UI/UX</h3>
+                    <p class="text-gray-600 mb-4">Layouts intuitivos e bonitos para apps e sites que encantam usuários.
+                    </p>
+                    <a href="#" class="text-blue-600 font-medium hover:underline">Saiba mais →</a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- GALERIA -->
+    <section class="py-16 bg-gray-100">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">Galeria de Projetos</h2>
+            <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-4">
+                <!-- Substitua os links abaixo por imagens reais -->
+                <img src="https://via.placeholder.com/400x250" class="rounded-lg shadow-md hover:scale-105 transition"
+                    alt="Projeto 1">
+                <img src="https://via.placeholder.com/400x250" class="rounded-lg shadow-md hover:scale-105 transition"
+                    alt="Projeto 2">
+                <img src="https://via.placeholder.com/400x250" class="rounded-lg shadow-md hover:scale-105 transition"
+                    alt="Projeto 3">
+                <img src="https://via.placeholder.com/400x250" class="rounded-lg shadow-md hover:scale-105 transition"
+                    alt="Projeto 4">
+                <img src="https://via.placeholder.com/400x250" class="rounded-lg shadow-md hover:scale-105 transition"
+                    alt="Projeto 5">
+                <img src="https://via.placeholder.com/400x250" class="rounded-lg shadow-md hover:scale-105 transition"
+                    alt="Projeto 6">
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTATO -->
+    <section id="contato" class="py-16 bg-white">
+        <div class="max-w-3xl mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-8">Entre em Contato</h2>
+            <form class="space-y-6 bg-gray-50 p-6 rounded-lg shadow">
+
+                <div>
+                    <label class="block text-sm font-medium">Nome</label>
+                    <input type="text"
+                        class="w-full mt-1 border border-gray-300 p-3 rounded outline-none focus:ring focus:ring-blue-200"
+                        placeholder="Seu nome">
+                </div>
+
+                <div>
+                    <label class="block text-sm font-medium">Email</label>
+                    <input type="email"
+                        class="w-full mt-1 border border-gray-300 p-3 rounded outline-none focus:ring focus:ring-blue-200"
+                        placeholder="seu@email.com">
+                </div>
+
+                <div>
+                    <label class="block text-sm font-medium">Mensagem</label>
+                    <textarea rows="5"
+                        class="w-full mt-1 border border-gray-300 p-3 rounded outline-none focus:ring focus:ring-blue-200"
+                        placeholder="Digite sua mensagem..."></textarea>
+                </div>
+
+                <button type="submit" class="bg-blue-600 text-white px-6 py-3 rounded hover:bg-blue-700 transition">
+                    Enviar Mensagem
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="text-center py-6 text-sm text-gray-500">
+        © 2025 Seu Nome. Todos os direitos reservados.
+    </footer>
+
+</body>
+
+</html>
