@@ -1,54 +1,152 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página de Capa - Meus Projetos</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Meus 10 Projetos com Bootstrap 5</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
 </head>
 
 <body>
 
-    <!-- Cabeçalho -->
-    <div class="container mt-5">
-        <h1 class="text-center">Meus Projetos com Bootstrap 5</h1>
-        <p class="text-center">Clique nos links abaixo para acessar meus projetos.</p>
-        <div class="row justify-content-center">
-
-            <!-- Projeto 1 -->
-            <div class="col-md-3 mb-4">
-                <div class="card shadow-sm h-100">
-                    <img src="imagens/projeto1.jpg" class="card-img-top" alt="Projeto 1">
-                    <div class="card-body">
-                        <h5 class="card-title">Projeto 1</h5>
-                        <p class="card-text">Clique para acessar o Site 1.</p>
-                        <a href="https://fabiovnucci-sites-bootstrap5.netlify.app/" class="btn btn-primary"
-                            target="_blank">Visitar Site</a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Projeto 2 -->
-            <div class="col-md-3 mb-4">
-                <div class="card shadow-sm h-100">
-                    <img src="imagens/projeto2.jpg" class="card-img-top" alt="Projeto 2">
-                    <div class="card-body">
-                        <h5 class="card-title">Projeto 2</h5>
-                        <p class="card-text">Clique para acessar o Site 2.</p>
-                        <a href="https://outrosite.netlify.app/" class="btn btn-primary" target="_blank">Visitar
-                            Site</a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Adicione mais projetos aqui conforme necessário -->
-
-        </div>
+  <!-- Cabeçalho -->
+  <header class="bg-primary text-white text-center py-5 mb-4">
+    <div class="container">
+      <h1 class="display-4">Meus 10 Projetos com Bootstrap 5</h1>
+      <p class="lead">Sites desenvolvidos com HTML, CSS e Bootstrap</p>
     </div>
+  </header>
 
-    <!-- Scripts do Bootstrap -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Cards -->
+  <div class="container">
+    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+
+      <!-- Repetindo os cards para cada projeto -->
+
+      <div class="col">
+        <div class="card h-100 shadow">
+          <img src="site1/imagem.jpg" class="card-img-top" alt="Projeto 1">
+          <div class="card-body">
+            <h5 class="card-title">Projeto 1</h5>
+            <p class="card-text">Descrição do projeto 1.</p>
+            <a href="site 1 boostrap/index.html" class="btn btn-primary" target="_blank">Visitar Site</a>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="col">
+        <div class="card h-100 shadow">
+          <img src="site2/imagem.jpg" class="card-img-top" alt="Projeto 2">
+          <div class="card-body">
+            <h5 class="card-title">Projeto 2</h5>
+            <p class="card-text">Descrição do projeto 2.</p>
+            <a href="site 2 bootstrap/index.html" class="btn btn-primary" target="_blank">Visitar Site</a>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="col">
+        <div class="card h-100 shadow">
+          <img src="site3/imagem.jpg" class="card-img-top" alt="Projeto 3">
+          <div class="card-body">
+            <h5 class="card-title">Projeto 3</h5>
+            <p class="card-text">Descrição do projeto 3.</p>
+            <a href="site 3 bootstrap/index.html" class="btn btn-primary" target="_blank">Visitar Site</a>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="col">
+        <div class="card h-100 shadow">
+          <img src="site4/imagem.jpg" class="card-img-top" alt="Projeto 4">
+          <div class="card-body">
+            <h5 class="card-title">Projeto 4</h5>
+            <p class="card-text">Descrição do projeto 4.</p>
+            <a href="site 4 bootstrap/index.html" class="btn btn-primary" target="_blank">Visitar Site</a>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="col">
+        <div class="card h-100 shadow">
+          <img src="site5/imagem.jpg" class="card-img-top" alt="Projeto 5">
+          <div class="card-body">
+            <h5 class="card-title">Projeto 5</h5>
+            <p class="card-text">Descrição do projeto 5.</p>
+            <a href="site 5 bootstrap/index.html" class="btn btn-primary" target="_blank">Visitar Site</a>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="col">
+        <div class="card h-100 shadow">
+          <img src="site6/imagem.jpg" class="card-img-top" alt="Projeto 6">
+          <div class="card-body">
+            <h5 class="card-title">Projeto 6</h5>
+            <p class="card-text">Descrição do projeto 6.</p>
+            <a href="site 6 bootstrap/index.html" class="btn btn-primary" target="_blank">Visitar Site</a>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="col">
+        <div class="card h-100 shadow">
+          <img src="site7/imagem.jpg" class="card-img-top" alt="Projeto 7">
+          <div class="card-body">
+            <h5 class="card-title">Projeto 7</h5>
+            <p class="card-text">Descrição do projeto 7.</p>
+            <a href="site 7 bootstrap/index.html" class="btn btn-primary" target="_blank">Visitar Site</a>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="col">
+        <div class="card h-100 shadow">
+          <img src="site8/imagem.jpg" class="card-img-top" alt="Projeto 8">
+          <div class="card-body">
+            <h5 class="card-title">Projeto 8</h5>
+            <p class="card-text">Descrição do projeto 8.</p>
+            <a href="site 8 bootstrap/index.html" class="btn btn-primary" target="_blank">Visitar Site</a>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="col">
+        <div class="card h-100 shadow">
+          <img src="site9/imagem.jpg" class="card-img-top" alt="Projeto 9">
+          <div class="card-body">
+            <h5 class="card-title">Projeto 9</h5>
+            <p class="card-text">Descrição do projeto 9.</p>
+            <a href="site 9 bootstrap/index.html" class="btn btn-primary" target="_blank">Visitar Site</a>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="col">
+        <div class="card h-100 shadow">
+          <img src="site10/imagem.jpg" class="card-img-top" alt="Projeto 10">
+          <div class="card-body">
+            <h5 class="card-title">Projeto 10</h5>
+            <p class="card-text">Descrição do projeto 10.</p>
+            <a href="site 10 bootstrap/index.html" class="btn btn-primary" target="_blank">Visitar Site</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
