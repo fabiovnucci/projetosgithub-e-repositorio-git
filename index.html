@@ -8,8 +8,9 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
   <style>
     body {
-      background: linear-gradient(135deg, #089ac7, #080a79);
-      color: rgb(245, 11, 11);
+      /* background: linear-gradient(135deg, #089ac7, #080a79);
+      color: rgb(245, 11, 11); */
+      background-color: #B0C4DE;
       min-height: 100vh;
       font-family: Arial, sans-serif;
 
@@ -37,13 +38,13 @@
 
 <body>
 
-  <header class="bg-black text-white text-center py-5 mb-4">
+  <header class="bg-black text-white text-center py-5 mb-1">
     <div class="container">
-      <h1 class="display-6 fw-bold text-shadow">Meus 10 Projetos com Bootstrap 5</h1>
-      <p class="lead">Todos os projetos criados com HTML5, CSS3, JavaScript e Bootstrap5</p>
+      <h1 class="display-6 text-shadow">Meus 10 Projetos com Bootstrap 5</h1>
+      <p class="lead"> Projetos criados com HTML5, CSS3, JavaScript e Bootstrap5</p>
 
 
-      <div class="d-flex justify-content-center gap-4 mt-4">
+      <div class="d-flex justify-content-center gap-4 mt-2">
         <div>
           <div class="spinner-border text-danger" role="status">
             <span class="visually-hidden">Loading...</span>
@@ -219,7 +220,7 @@
   </div>
 
 
-  <footer class="text-center py-3" style="background-color:black;">
+  <footer class="text-center py-1" style="background-color:black;">
     <div class="d-flex justify-content-center align-items-center">
       <p class="mb-0 text-white me-2"><strong>&reg; 2025 Todos os direitos reservados.</strong></p>
       <a href="https://github.com/fabiovnucci" target="_blank" title="Clique aqui">
@@ -228,303 +229,6 @@
       </a>
     </div>
   </footer>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-</body>
-
-</html>
-
-
-
-
-<!DOCTYPE html>
-<html lang="pt-BR">
-
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Meus 10 Projetos com Bootstrap 5</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
-  <style>
-    body {
-      background: linear-gradient(135deg, #089ac7, #080a79);
-      color: white;
-      min-height: 100vh;
-      font-family: Arial, sans-serif;
-    }
-
-    .card {
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
-    }
-
-    .card:hover {
-      transform: scale(1.03);
-      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
-    }
-
-    .ratio iframe {
-      border-radius: 0.375rem 0.375rem 0 0;
-    }
-
-    .text-shadow {
-      text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.6);
-    }
-  </style>
-</head>
-
-<body>
-
-  <header class="bg-black text-white text-center py-5 mb-4">
-    <div class="container">
-      <h1 class="display-6 fw-bold text-shadow">Meus 10 Projetos com Bootstrap 5</h1>
-      <p class="lead">Criados com HTML5, CSS3, JavaScript e Bootstrap5</p>
-
-      <div class="d-flex justify-content-center gap-4 mt-4">
-        <div>
-          <div class="spinner-border text-danger" role="status"></div>
-          <div><strong>HTML5</strong></div>
-        </div>
-        <div>
-          <div class="spinner-border text-primary" role="status"></div>
-          <div><strong>CSS3</strong></div>
-        </div>
-        <div>
-          <div class="spinner-border text-warning" role="status"></div>
-          <div><strong>JavaScript</strong></div>
-        </div>
-        <div>
-          <div class="spinner-border text-info" role="status"></div>
-          <div><strong>Bootstrap 5</strong></div>
-        </div>
-      </div>
-    </div>
-  </header>
-
-  <div class="container pb-5">
-
-    <div class="accordion" id="projetosAccordion">
-
-      <!-- Categoria 1 -->
-      <div class="accordion-item bg-dark text-white">
-        <h2 class="accordion-header" id="headingModelos">
-          <button class="accordion-button bg-primary text-white" type="button" data-bs-toggle="collapse"
-            data-bs-target="#collapseModelos">
-            Modelos Bootstrap
-          </button>
-        </h2>
-        <div id="collapseModelos" class="accordion-collapse collapse show" data-bs-parent="#projetosAccordion">
-          <div class="accordion-body">
-            <div class="row justify-content-center g-4">
-
-              <div class="col-md-4">
-                <div class="card text-white bg-dark">
-                  <div class="ratio ratio-16x9">
-                    <iframe src="site1bootstrap/index.html"></iframe>
-                  </div>
-                  <div class="card-body">
-                    <h5 class="card-title">Projeto 1</h5>
-                    <p class="card-text">Modelo Bootstrap 5</p>
-                    <a href="site1bootstrap/index.html" class="btn btn-outline-light w-100" target="_blank">Visitar
-                      Site</a>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-md-4">
-                <div class="card text-white bg-dark">
-                  <div class="ratio ratio-16x9">
-                    <iframe src="site 4bootstrap/index.html"></iframe>
-                  </div>
-                  <div class="card-body">
-                    <h5 class="card-title">Projeto 4</h5>
-                    <p class="card-text">Sites Modernos</p>
-                    <a href="site 4bootstrap/index.html" class="btn btn-outline-light w-100" target="_blank">Visitar
-                      Site</a>
-                  </div>
-                </div>
-              </div>
-
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Categoria 2 -->
-      <div class="accordion-item bg-dark text-white">
-        <h2 class="accordion-header" id="headingAcademia">
-          <button class="accordion-button bg-success text-white collapsed" type="button" data-bs-toggle="collapse"
-            data-bs-target="#collapseAcademia">
-            Projetos Academia
-          </button>
-        </h2>
-        <div id="collapseAcademia" class="accordion-collapse collapse" data-bs-parent="#projetosAccordion">
-          <div class="accordion-body">
-            <div class="row justify-content-center g-4">
-
-              <div class="col-md-4">
-                <div class="card text-white bg-dark">
-                  <div class="ratio ratio-16x9">
-                    <iframe src="site 5bootstrap/index.html"></iframe>
-                  </div>
-                  <div class="card-body">
-                    <h5 class="card-title">Projeto 5</h5>
-                    <p class="card-text">Academia Fitness</p>
-                    <a href="site 5bootstrap/index.html" class="btn btn-outline-light w-100" target="_blank">Visitar
-                      Site</a>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-md-4">
-                <div class="card text-white bg-dark">
-                  <div class="ratio ratio-16x9">
-                    <iframe src="site8bootstrap/index.html"></iframe>
-                  </div>
-                  <div class="card-body">
-                    <h5 class="card-title">Projeto 8</h5>
-                    <p class="card-text">Academia 2</p>
-                    <a href="site8bootstrap/index.html" class="btn btn-outline-light w-100" target="_blank">Visitar
-                      Site</a>
-                  </div>
-                </div>
-              </div>
-
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Categoria 3 -->
-      <div class="accordion-item bg-dark text-white">
-        <h2 class="accordion-header" id="headingTextos">
-          <button class="accordion-button bg-warning text-dark collapsed" type="button" data-bs-toggle="collapse"
-            data-bs-target="#collapseTextos">
-            Sites com Textos
-          </button>
-        </h2>
-        <div id="collapseTextos" class="accordion-collapse collapse" data-bs-parent="#projetosAccordion">
-          <div class="accordion-body">
-            <div class="row justify-content-center g-4">
-
-              <div class="col-md-4">
-                <div class="card text-white bg-dark">
-                  <div class="ratio ratio-16x9">
-                    <iframe src="site3bootstrap/index.html"></iframe>
-                  </div>
-                  <div class="card-body">
-                    <h5 class="card-title">Projeto 3</h5>
-                    <p class="card-text">Entrada de Dados</p>
-                    <a href="site3bootstrap/index.html" class="btn btn-outline-light w-100" target="_blank">Visitar
-                      Site</a>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-md-4">
-                <div class="card text-white bg-dark">
-                  <div class="ratio ratio-16x9">
-                    <iframe src="site7bootstrap/index.html"></iframe>
-                  </div>
-                  <div class="card-body">
-                    <h5 class="card-title">Projeto 7</h5>
-                    <p class="card-text">Modelo com Textos</p>
-                    <a href="site7bootstrap/index.html" class="btn btn-outline-light w-100" target="_blank">Visitar
-                      Site</a>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-md-4">
-                <div class="card text-white bg-dark">
-                  <div class="ratio ratio-16x9">
-                    <iframe src="site9bootstrap/index.html"></iframe>
-                  </div>
-                  <div class="card-body">
-                    <h5 class="card-title">Projeto 9</h5>
-                    <p class="card-text">Textos e Cards</p>
-                    <a href="site9bootstrap/index.html" class="btn btn-outline-light w-100" target="_blank">Visitar
-                      Site</a>
-                  </div>
-                </div>
-              </div>
-
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Categoria 4 -->
-      <div class="accordion-item bg-dark text-white">
-        <h2 class="accordion-header" id="headingPessoal">
-          <button class="accordion-button bg-info text-white collapsed" type="button" data-bs-toggle="collapse"
-            data-bs-target="#collapsePessoal">
-            Projetos Pessoais
-          </button>
-        </h2>
-        <div id="collapsePessoal" class="accordion-collapse collapse" data-bs-parent="#projetosAccordion">
-          <div class="accordion-body">
-            <div class="row justify-content-center g-4">
-
-              <div class="col-md-4">
-                <div class="card text-white bg-dark">
-                  <div class="ratio ratio-16x9">
-                    <iframe src="site2bootstrap/index.html"></iframe>
-                  </div>
-                  <div class="card-body">
-                    <h5 class="card-title">Projeto 2</h5>
-                    <p class="card-text">Loja de Tênis</p>
-                    <a href="site2bootstrap/index.html" class="btn btn-outline-light w-100" target="_blank">Visitar
-                      Site</a>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-md-4">
-                <div class="card text-white bg-dark">
-                  <div class="ratio ratio-16x9">
-                    <iframe src="site6bootstrap/index.html"></iframe>
-                  </div>
-                  <div class="card-body">
-                    <h5 class="card-title">Projeto 6</h5>
-                    <p class="card-text">Site Pessoal</p>
-                    <a href="site6bootstrap/index.html" class="btn btn-outline-light w-100" target="_blank">Visitar
-                      Site</a>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-md-4">
-                <div class="card text-white bg-dark">
-                  <div class="ratio ratio-16x9">
-                    <iframe src="site10bootstrap/index.html"></iframe>
-                  </div>
-                  <div class="card-body">
-                    <h5 class="card-title">Projeto 10</h5>
-                    <p class="card-text">Site Petshop</p>
-                    <a href="site10bootstrap/index.html" class="btn btn-outline-light w-100" target="_blank">Visitar
-                      Site</a>
-                  </div>
-                </div>
-              </div>
-
-            </div>
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </div>
-
-  <footer class="text-center py-3" style="background-color:black;">
-    <div class="d-flex justify-content-center align-items-center">
-      <p class="mb-0 text-white me-2"><strong>&reg; 2025 Todos os direitos reservados.</strong></p>
-      <a href="https://github.com/fabiovnucci" target="_blank" title="Clique aqui">
-        <img src="assets/eu.png" style="width: 40px; height: 40px; box-shadow: 0 0 10px 5px rgba(0, 0, 255, 0.8);"
-          class="img-fluid rounded-circle">
-      </a>
-    </div>
-  </footer>
-
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
